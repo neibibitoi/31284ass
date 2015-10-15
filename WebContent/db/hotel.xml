@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="hotel.xsd">
+    <hotels>
+        <hotel>
+            <city>sydney</city>
+            <country>AU</country>
+            <id>1</id>
+            <name>hotel 1</name>
+        </hotel>
+        <hotel>
+            <city>sydney</city>
+            <country>CA</country>
+            <id>2</id>
+            <name>hotel 2</name>
+        </hotel>
+    </hotels>
+</root>
