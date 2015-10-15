@@ -50,16 +50,22 @@ public class ReviewServiceProxy implements soap.client.ReviewService {
     return reviewService.deleteReview(arg0, arg1, arg2);
   }
   
+  public int postReview(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, int arg4, int arg5) throws java.rmi.RemoteException{
+    if (reviewService == null)
+      _initReviewServiceProxy();
+    return reviewService.postReview(arg0, arg1, arg2, arg3, arg4, arg5);
+  }
+  
   public soap.client.Review getReviewById(int arg0) throws java.rmi.RemoteException{
     if (reviewService == null)
       _initReviewServiceProxy();
     return reviewService.getReviewById(arg0);
   }
   
-  public int postReview(java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, int arg4, int arg5) throws java.rmi.RemoteException{
+  public soap.client.Author login(java.lang.String arg0, java.lang.String arg1) throws java.rmi.RemoteException{
     if (reviewService == null)
       _initReviewServiceProxy();
-    return reviewService.postReview(arg0, arg1, arg2, arg3, arg4, arg5);
+    return reviewService.login(arg0, arg1);
   }
   
   public soap.client.Review[] getAllReviews(int arg0) throws java.rmi.RemoteException{

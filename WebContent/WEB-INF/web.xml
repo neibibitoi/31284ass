@@ -93,4 +93,24 @@
     <servlet-name>OnDeleteReview</servlet-name>
     <url-pattern>/OnDeleteReview</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OnLogin</display-name>
+    <servlet-name>OnLogin</servlet-name>
+    <servlet-class>servlets.OnLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OnLogin</servlet-name>
+    <url-pattern>/OnLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OnLogout</display-name>
+    <servlet-name>OnLogout</servlet-name>
+    <servlet-class>servlets.OnLogout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OnLogout</servlet-name>
+    <url-pattern>/OnLogout</url-pattern>
+  </servlet-mapping>
 </web-app>

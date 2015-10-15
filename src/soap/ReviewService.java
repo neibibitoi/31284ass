@@ -14,6 +14,7 @@ import javax.xml.ws.WebServiceContext;
 import javax.xml.ws.handler.MessageContext;
 
 import bean.Author;
+import bean.Authors;
 import bean.Review;
 import bean.Reviews;
 import dao.AuthorDAO;
@@ -41,7 +42,7 @@ public class ReviewService {
 		Reviews reviews = ReviewDAO.getAll();
 		return reviews.getReviews();
 	}
-	
+
 	@WebMethod
 	public Review getReviewById(int reviewId) {
 		initXmlFile();
@@ -91,6 +92,18 @@ public class ReviewService {
 			}
 		}
 
+	}
+
+	@WebMethod
+	public Author login(String username, String password) {
+		initXmlFile(); // set path for xml file when tomcat starts
+		Authors allAuthors = AuthorDAO.getAll();
+		for (Author a : allAuthors.getAuthors()) {
+			if (a.getName().equals(username) && a.getPassword().equals(password)) {
+				return a;
+			}
+		}
+		return null;
 	}
 
 }

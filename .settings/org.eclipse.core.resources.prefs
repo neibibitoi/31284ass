@@ -10,6 +10,7 @@ encoding//src/org/datacontract/schemas/_2004/_07/Microsoft_MT_Web_Service_V2/Tra
 encoding//src/org/tempuri/BasicHttpBinding_LanguageServiceStub.java=UTF-8
 encoding//src/org/tempuri/SoapService.java=UTF-8
 encoding//src/org/tempuri/SoapServiceLocator.java=UTF-8
+encoding//src/soap/client/Author.java=UTF-8
 encoding//src/soap/client/Review.java=UTF-8
 encoding//src/soap/client/ReviewService.java=UTF-8
 encoding//src/soap/client/ReviewServicePortBindingStub.java=UTF-8
