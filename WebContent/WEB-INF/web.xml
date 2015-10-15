@@ -73,4 +73,24 @@
     <servlet-name>ReviewTranslate</servlet-name>
     <url-pattern>/ReviewTranslate</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OnPostReview</display-name>
+    <servlet-name>OnPostReview</servlet-name>
+    <servlet-class>servlets.OnPostReview</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OnPostReview</servlet-name>
+    <url-pattern>/OnPostReview</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>OnDeleteReview</display-name>
+    <servlet-name>OnDeleteReview</servlet-name>
+    <servlet-class>servlets.OnDeleteReview</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OnDeleteReview</servlet-name>
+    <url-pattern>/OnDeleteReview</url-pattern>
+  </servlet-mapping>
 </web-app>
